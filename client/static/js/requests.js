@@ -5,29 +5,33 @@ addEventListener('load', getAll())
 
 async function getAll(){
     try {
-        const response = await fetch(`http://localhost:3000/posts`);
-        const data = await response.json()
-        renderAllCards(data)
+        await fetch(`http://localhost:3000/posts`)
+        .then(res => res.json())
+        .then(renderAllCards)
     } catch (err) {
-        console.log('not working')
         console.warn(err);
     }
 }
 
 
+
 function renderAllCards(data) {
-    
-    var divs = [];
+    console.log(data[1])
+    let divs = [];
     
 
-    data.array.forEach(element => {
+    data.forEach(element => {
         const title = document.createElement('h2')
         title.textContent = element.title
+        title.setAttribute('class', 'title-card')
         const div = document.createElement('div')
+        div.setAttribute('class', 'card-div')
         div.setAttribute('id', element.id)
         const pseudonym = document.createElement('p')
+        pseudonym.setAttribute('class', 'pseudonym-card')
         pseudonym.textContent = element.pseudonym
         const content = document.createElement('p')
+        content.setAttribute('class', 'content-card')
         content.textContent = element.content
 
         div.append(title)
@@ -36,8 +40,12 @@ function renderAllCards(data) {
         divs.push(div)
     });
 
-    header.append(divs)
+    divs.forEach(div => {
+        cardssection.append(div)
+    })
+    
 
     
     
 }
+

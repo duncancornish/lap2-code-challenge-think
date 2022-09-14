@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <script defer src="static/js/post.js"></script>
     <link rel="stylesheet" href="static/css/post.css">
     <title>MyThoughts</title>
 </head>
@@ -21,11 +22,12 @@
         <div id="post-form" >
             <form action="submit" id = "form-create">
                 <label for="title">Title of Post:</label>
-                <input id = "title" type="text" placeholder="title of post">
+                <input id = "title" type="text" placeholder="title of post" required>
                 <label for="pseudonym">Author:</label>
-                <input id = "pseudonym" type="text" placeholder = "pseudonym">
+                <input id = "pseudonym" type="text" placeholder = "pseudonym" required>
                 <label for="entry">Thoughts:</label>
-                <textarea id="entry" cols="30" rows="10" placeholder="my thoughts..."></textarea>
+                <textarea id="entry" cols="30" rows="10" placeholder="my thoughts..." required></textarea>
+                <input id="submit-form" type="submit">
                 
             </form>
         </div>
