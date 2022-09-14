@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const booksController = require('../controllers/posts.js')
+const postsController = require('../controllers/posts.js')
 
 router.get('/', postsController.index)
 router.get('/:id', postsController.show)
