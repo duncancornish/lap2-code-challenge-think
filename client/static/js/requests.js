@@ -45,6 +45,9 @@ function renderAllCards(data) {
     })
     
 
+    let cardHolders = document.getElementsByClassName("card-div")
+    console.log(cardHolders.length)
+
     
     
 }
