@@ -34,7 +34,7 @@ module.exports = class Post {
         });
     };
     
-    static async create(title, pseudonym, content){
+    static async create({title, pseudonym, content}){
         return new Promise (async (resolve, reject) => {
             try {
                 let postData = await db.query(`INSERT INTO posts (title, pseudonym, content) VALUES ($1, $2, $3) RETURNING *;`, [ title, pseudonym, content ]);

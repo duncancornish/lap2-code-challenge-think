@@ -16,7 +16,7 @@ services:
     ports: 
       - 3000:3000
     environment: 
-      - PGUSER=futureproof
+      - PGUSER=me
       - PGHOST=db
       - PGPASSWORD=thinkpass
       - PGDATABASE=think
@@ -32,7 +32,7 @@ services:
       - "dbdata:/var/lib/postgresql/data"
     environment: 
       - POSTGRES_DB=think
-      - POSTGRES_USER=futureproof
+      - POSTGRES_USER=me
       - POSTGRES_PASSWORD=thinkpass
 volumes:
   dbdata:
