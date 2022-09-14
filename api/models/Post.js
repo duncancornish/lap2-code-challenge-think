@@ -25,7 +25,9 @@ module.exports = class Post {
     static findById(id){
         return new Promise (async (resolve, reject) => {
             try {
-                let postData = await db.query(`SELECT * FROM posts WHERE post.id = $1;`, [ id ]);
+                let postData = await db.query(`SELECT *
+                                                    FROM posts 
+                                                    WHERE id = $1;`, [ id ]);
                 let post = new Post(postData.rows[0]);
                 resolve (post);
             } catch (err) {
