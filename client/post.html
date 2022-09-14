@@ -8,16 +8,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
     <script defer src="static/js/post.js"></script>
+    <link rel="icon" type="image/x-icon" href="static/images/thinkingcloud.png">
     <link rel="stylesheet" href="static/css/post.css">
     <title>MyThoughts</title>
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="post.html">Create</a>
+        <a id = "home-link" href="index.html">Home</a>
+        <a id = "create-link" href="post.html">Create</a>
     </nav>
     <section id = "cards">
-        <h1> Make A Post</h1>
+        <h1>Make A Post</h1>
 
         <div id="post-form" >
             <form action="submit" id = "form-create">
@@ -27,7 +28,7 @@
                 <input id = "pseudonym" type="text" placeholder = "pseudonym" required>
                 <label for="entry">Thoughts:</label>
                 <textarea id="entry" cols="30" rows="10" placeholder="my thoughts..." required></textarea>
-                <input id="submit-form" type="submit">
+                <input id="submit-form" type="submit" value = "Publish" >
                 
             </form>
         </div>
