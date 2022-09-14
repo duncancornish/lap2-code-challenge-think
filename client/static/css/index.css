@@ -1,0 +1,52 @@
+:root{
+    --navtext:#E0AC9D;
+    --nav:#484A47;
+    --background:#8FC0A9;
+    --text:#07004D;
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--background);
+    font-family: 'Nanum Pen Script', cursive;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    font-size: 50px;
+    background-color: var(--nav);
+    color: var(--navtext);
+    font-weight: bold;
+    font-family: 'Nanum Pen Script', cursive;
+    
+
+
+}
+
+a{
+    text-decoration: none;
+    color: var(--navtext);
+    padding:10px;
+    
+}
+
+h1{
+    display:flex;
+    justify-content: center;
+    font-size: 60px;
+    padding:20px;
+    color:var(--text)
+
+}
+
+a:hover{
+    font-size: 55px;
+    padding:5px;
+}
