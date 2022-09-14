@@ -85,4 +85,16 @@ label{
 textarea{
     font-family: 'Nanum Pen Script', cursive;
     font-size: 20px;
+    resize: none;
+}
+
+#submit-form{
+    margin:10px;
+    border-radius: 10px;
+    border:1px solid var(--nav);
+    color: var(--navtext);
+    font-weight: bold;
+    font-size:25px;
+    background-color: var(--nav);
+
 }
