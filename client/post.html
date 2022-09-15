@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <script defer src="static/js/post.js"></script>
+    <link rel="icon" type="image/x-icon" href="static/images/thinkingcloud.png">
+    <link rel="stylesheet" href="static/css/post.css">
+    <title>MyThoughts</title>
+</head>
+<body>
+    <nav>
+        <a id = "home-link" href="index.html">Home</a>
+        <a id = "create-link" href="post.html">Create</a>
+    </nav>
+    <section id = "cards">
+        <h1>Make A Post</h1>
+
+        <div id="post-form" >
+            <form action="submit" id = "form-create">
+                <label for="title">Title of Post:</label>
+                <input id = "title" type="text" placeholder="title of post" required>
+                <label for="pseudonym">Author:</label>
+                <input id = "pseudonym" type="text" placeholder = "pseudonym" required>
+                <label for="entry">Thoughts:</label>
+                <textarea id="entry" cols="30" rows="10" placeholder="my thoughts..." required></textarea>
+                <input id="submit-form" type="submit" value = "Publish" >
+                
+            </form>
+        </div>
+
+    </section>
+</body>
+</html>
